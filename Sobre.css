@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7fafd;
+  font-family: "Poppins", sans-serif;
+  color: #2c3e50;
+}
+
+.sobre-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Texto principal */
+.texto-sobre h1 {
+  font-size: 2.8rem;
+  color: #007acc;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.texto-sobre hr {
+  border: none;
+  border-top: 3px solid #8fd4f8;
+  width: 100px;
+  margin: 0.5rem auto 2rem;
+}
+
+.texto-sobre p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.slogan {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0097c7;
+  font-style: italic;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Seção de imagens */
+.imagens-sobre {
+  margin-top: 3rem;
+}
+
+.imagens-sobre h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #005b99;
+  margin-bottom: 2rem;
+}
+
+.galeria-imagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* Estilo das figuras */
+.galeria-imagens figure {
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.galeria-imagens figure:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.galeria-imagens img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.galeria-imagens figcaption {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #555;
+  background-color: #f0f8ff;
+  font-weight: 500;
+}
+
+/* Responsivo extra para telas menores */
+@media (max-width: 500px) {
+  .texto-sobre h1 {
+    font-size: 2rem;
+  }
+
+  .texto-sobre p,
+  .slogan {
+    font-size: 1rem;
+  }
+
+  .imagens-sobre h2 {
+    font-size: 1.5rem;
+  }
+}
